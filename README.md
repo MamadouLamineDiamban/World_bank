@@ -1,58 +1,18 @@
 # World_bank
 About Dataset
-This dataset simulates a set of key economic, social, and environmental indicators for 20 countries over the period from 2010 to 2019.
-The dataset is designed to reflect typical World Bank metrics, which are used for analysis, policy-making, and forecasting. It includes the following variables:
+59 world development indicators downloaded from the website of the World Bank on 30 May 2024, covering the whole world and spanning more than six decades, are included in this dataset.
 
-Country Name: The country for which the data is recorded.
-Year: The specific year of the observation (from 2010 to 2019).
-GDP (USD): Gross Domestic Product in billions of US dollars, indicating the economic output of a country.
-Population: The total population of the country in millions.
-Life Expectancy (in years): The average life expectancy at birth for the country’s population.
-Unemployment Rate (%): The percentage of the total labor force that is unemployed but actively seeking employment.
-CO2 Emissions (metric tons per capita): The per capita carbon dioxide emissions, reflecting environmental impact.
-Access to Electricity (% of population): The percentage of the population with access to electricity, representing infrastructure development.
-Country:
+You are invited to:
 
-Description: Name of the country for which the data is recorded.
-Data Type: String
-Example: "United States", "India", "Brazil"
-Year:
+explore correlations between the indicators
+explore time trends
+perform causal inference on the data, that itself is only observational in nature
+try to predict the future course of the development indicators per country
+do whatever analysis sparks your interest!
+A challenge is the number of missing values. Some indicators have been measured since 1960 (for example: Urban population (% of total population)), but others (for example: Individuals using the Internet (% of population), but also Access to electricity (% of population)) only since much later. Those are differences between indicators, but there are also differences between countries in what indicators they have measured and since when. There is an increase over time regarding the completeness of the data, with the data being most complete from 2010 to 2021. For the last two years, 2022 and 2023, a lot of data is missing because of the time it costs to produce these statistics.
 
-Description: The year in which the data is observed.
-Data Type: Integer
-Range: 2010 to 2019
-Example: 2012, 2015
-GDP (USD):
+Apart from 217 countries there are also country aggregates that can be based on location (for example: Latin America & Caribbean) or on other characteristics (for example: Low income or OECD members). Think well if you want to include these in your analysis or not.
 
-Description: The Gross Domestic Product of the country in billions of US dollars, indicating the economic output.
-Data Type: Float (billions of USD)
-Example: 14200.56 (represents 14,200.56 billion USD)
-Population:
+For inspiration, check Population size and country performance, one of four Medium articles discussing this dataset. In the article you also find links to the other three articles.
 
-Description: The total population of the country in millions.
-Data Type: Float (millions of people)
-Example: 331.42 (represents 331.42 million people)
-Life Expectancy (in years):
-
-Description: The average number of years a newborn is expected to live, assuming that current mortality rates remain constant throughout their life.
-Data Type: Float (years)
-Range: Typically between 50 and 85 years
-Example: 78.5 years
-Unemployment Rate (%):
-
-Description: The percentage of the total labor force that is unemployed but actively seeking employment.
-Data Type: Float (percentage)
-Range: Typically between 2% and 25%
-Example: 6.25%
-CO2 Emissions (metric tons per capita):
-
-Description: The amount of carbon dioxide emissions per person in the country, measured in metric tons.
-Data Type: Float (metric tons)
-Range: Typically between 0.5 and 20 metric tons per capita
-Example: 4.32 metric tons per capita
-Access to Electricity (%):
-
-Description: The percentage of the population with access to electricity.
-Data Type: Float (percentage)
-Range: Typically between 50% and 100%
-Example: 95.7%
+The Creative Commons Attribution 4.0 International License applies to this dataset. Consult https://data.worldbank.org/summary-terms-of-use for more information.
